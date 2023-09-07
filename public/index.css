@@ -1,0 +1,125 @@
+.header{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: transparent;
+}
+
+.header-logo img{
+    width: 100px;
+    mix-blend-mode: multiply;
+}
+
+.menu-item > ul{
+    list-style: none;
+    display: flex;    
+}
+
+.menu-item > ul > li{
+    padding: 0px 10px;
+}
+
+.border{
+    display: flex;
+    gap: 20px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -350px ;
+    }
+    100% {
+        background-position: 350px;
+    }
+}
+
+.background {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    width: 350px;
+    height: 300px;
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+    border: 1px solid transparent;
+
+    /* Shimmer effect */
+    background: linear-gradient(90deg, #f0f0f0, #f8f8f8, #f0f0f0);
+    background-size: 350px 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+
+.resturant{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 350px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.resturant:hover{
+    border: 1px solid black;
+}
+
+.resturant img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.search-bar > input{
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+    width: 440px;
+    outline: none;
+    text-align: center;
+}
+
+.rating{
+    padding: 5px 10px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.lineline-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.about-container{
+    overflow: hidden;
+}
+
+.about-container img{
+    max-width: 100%;
+    height: auto;
+}
